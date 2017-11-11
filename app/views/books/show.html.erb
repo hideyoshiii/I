@@ -61,7 +61,8 @@
 <main class="" id="main-collapse">
 
 <div class="img-show">
-<%= image_tag @book.photo.url(:large) %>
+
+<%= image_tag @book.photo.url, :class =>'pc' %>
 <br><br>
 <h3><%= @book.title %></h3>
 <P><%= @book.author %></p>

@@ -95,7 +95,6 @@ Rails.application.configure do
 
   # config/environments/production.rb
 config.paperclip_defaults = {
-  :styles => { llarge: "740x500", medium: "650x400", thumb: "100x100>" },
   storage: :s3,
   s3_protocol: :https,
   s3_credentials: {
