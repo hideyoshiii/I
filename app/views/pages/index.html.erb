@@ -103,7 +103,7 @@
     <% if (!user_signed_in?) %>
     <%= link_to "Facebookで始める", user_facebook_omniauth_authorize_path, :class => "btn btn-facebook" %>
     <% else %>
-    <%= link_to "1番を決める", uuser_path(current_user), :class => "btn btn-primary" %>
+    <%= link_to "1番を決める", user_path(current_user), :class => "btn btn-primary" %>
     <% end %>
  </div>
 </div>
