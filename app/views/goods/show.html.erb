@@ -71,6 +71,8 @@
 <%= image_tag @good.user.image, :class => "img-circle profile-1" %>
 <% end %>
 &nbsp;&nbsp;<%= @good.user.name %>
+<br><br>
+<%= social_share_button_tag(@good.title) %>
 <% if @good.user == current_user %>
 <br><br>
 <%= link_to "編集する", edit_good_path(@good), :class => "btn btn-default" %>

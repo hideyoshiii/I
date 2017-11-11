@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require social-share-button
 //= require bootstrap-sprockets
 //= require rails-ujs
 

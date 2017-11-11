@@ -72,6 +72,8 @@
 <%= image_tag @place.user.image, :class => "img-circle profile-1" %>
 <% end %>
 &nbsp;&nbsp;<%= @place.user.name %>
+<br><br>
+<%= social_share_button_tag(@place.title) %>
 <% if @place.user == current_user %>
 <br><br>
 <%= link_to "編集する", edit_place_path(@place), :class => "btn btn-default" %>

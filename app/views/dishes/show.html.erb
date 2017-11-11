@@ -72,6 +72,8 @@
 <%= image_tag @dish.user.image, :class => "img-circle profile-1" %>
 <% end %>
 &nbsp;&nbsp;<%= @dish.user.name %>
+<br><br>
+<%= social_share_button_tag(@dish.title) %>
 <% if @dish.user == current_user %>
 <br><br>
 <%= link_to "編集する", edit_dish_path(@dish), :class => "btn btn-default" %>

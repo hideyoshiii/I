@@ -72,6 +72,8 @@
 <%= image_tag @movie.user.image, :class => "img-circle profile-1" %>
 <% end %>
 &nbsp;&nbsp;<%= @movie.user.name %>
+<br><br>
+<%= social_share_button_tag(@movie.title) %>
 <% if @movie.user == current_user %>
 <br><br>
 <%= link_to "編集する", edit_movie_path(@movie), :class => "btn btn-default" %>
