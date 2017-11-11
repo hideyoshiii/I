@@ -68,7 +68,7 @@
 <br><br>
 <p style="margin-left:50px;margin-right:50px"><%= @book.description %></p>
 <br><br>
-<%= link_to user_path(@book.user) do %>
+<%= link_to "/users/#{@book.user_id}" do %>
 <%= image_tag @book.user.image, :class => "img-circle profile-1" %>
 <% end %>
 &nbsp;&nbsp;<%= @book.user.name %>
