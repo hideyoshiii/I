@@ -69,7 +69,7 @@
   <div class="gutter-sizer"></div>
     <div class="grid-sizer"></div>
     
-    <% if Book.find_by(user_id: current_user.id) %>
+    <% if Book.find_by(user_id: @user.id) %>
     <div class="grid-item">
       <%= image_tag @book.photo.url, :class =>'img-responsive' %>
       <%= link_to book_path(@book) do %>
@@ -101,7 +101,7 @@
     <% end %>
     <% end %>
 
-    <% if Movie.find_by(user_id: current_user.id) %>
+    <% if Movie.find_by(user_id: @user.id) %>
     <div class="grid-item"> 
       <%= image_tag @movie.photo.url, :class =>'img-responsive' %>
       <%= link_to movie_path(@movie) do %>
@@ -133,7 +133,7 @@
     <% end %>
     <% end %>
 
-    <% if Song.find_by(user_id: current_user.id) %>
+    <% if Song.find_by(user_id: @user.id) %>
     <div class="grid-item">
       <%= image_tag @song.photo.url, :class =>'img-responsive' %>
       <%= link_to song_path(@song) do %>
@@ -165,7 +165,7 @@
     <% end %>
     <% end %>
 
-    <% if Dish.find_by(user_id: current_user.id) %>
+    <% if Dish.find_by(user_id: @user.id) %>
     <div class="grid-item">
       <%= image_tag @dish.photo.url, :class =>'img-responsive' %>
       <%= link_to dish_path(@dish) do %>
@@ -197,7 +197,7 @@
     <% end %>
     <% end %>
     
-    <% if Place.find_by(user_id: current_user.id) %>
+    <% if Place.find_by(user_id: @user.id) %>
     <div class="grid-item">
       <%= image_tag @place.photo.url, :class =>'img-responsive' %>
       <%= link_to place_path(@place) do %>
@@ -229,7 +229,7 @@
     <% end %>
     <% end %>
 
-    <% if Good.find_by(user_id: current_user.id) %>
+    <% if Good.find_by(user_id: @user.id) %>
     <div class="grid-item">
       <%= image_tag @good.photo.url, :class =>'img-responsive' %>
       <%= link_to good_path(@good) do %>
