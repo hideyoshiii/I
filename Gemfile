@@ -39,6 +39,7 @@ gem 'omniauth-facebook'
 gem "paperclip", "~> 5.0.0"
 gem "figaro", "~> 1.0.0"
 gem "font-awesome-rails"
+gem 'aws-sdk', '~> 2.3'
 
 group :production do 
   gem 'pg'
