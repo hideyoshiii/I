@@ -47,7 +47,7 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 
 
 .pc { max-width:1366px;height:auto; }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
 .pc { width:100%;height:auto; }
 }
 
@@ -61,6 +61,8 @@ $size: 30px;
   }
 }
 
-@media only screen and (max-width: 800px) {
 .category { text-align:center; }
+}
+@media only screen and (min-width: 1000px) {
+.category { display: none !important; }
 }
