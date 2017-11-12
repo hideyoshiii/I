@@ -73,7 +73,7 @@
 <% end %>
 &nbsp;&nbsp;<%= @place.user.name %>
 <br><br>
-<%= social_share_button_tag(@place.title) %>
+<%= social_share_button_tag(@sns) %>
 <% if @place.user == current_user %>
 <br><br>
 <%= link_to "編集する", edit_place_path(@place), :class => "btn btn-default" %>

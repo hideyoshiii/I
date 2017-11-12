@@ -7,6 +7,7 @@ class SongsController < ApplicationController
 
   def show
     @song = Song.find(params[:id])
+    @sns = "[my I あなたのNo.1]/Song " + @song.title
   end
 
   def new

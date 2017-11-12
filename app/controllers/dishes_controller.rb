@@ -7,6 +7,7 @@ class DishesController < ApplicationController
 
   def show
     @dish = Dish.find(params[:id])
+    @sns = "[my I あなたのNo.1]/Dish " + @dish.title
   end
 
   def new

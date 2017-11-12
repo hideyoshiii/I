@@ -7,6 +7,7 @@ class PlacesController < ApplicationController
 
   def show
     @place = Place.find(params[:id])
+    @sns = "[my I あなたのNo.1]/Place " + @place.title
   end
 
   def new

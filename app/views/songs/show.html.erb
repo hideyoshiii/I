@@ -73,7 +73,7 @@
 <% end %>
 &nbsp;&nbsp;<%= @song.user.name %>
 <br><br>
-<%= social_share_button_tag(@song.title) %>
+<%= social_share_button_tag(@sns) %>
 <% if @song.user == current_user %>
 <br><br>
 <%= link_to "編集する", edit_song_path(@song), :class => "btn btn-default" %>

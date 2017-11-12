@@ -72,7 +72,7 @@
 <% end %>
 &nbsp;&nbsp;<%= @good.user.name %>
 <br><br>
-<%= social_share_button_tag(@good.title) %>
+<%= social_share_button_tag(@sns) %>
 <% if @good.user == current_user %>
 <br><br>
 <%= link_to "編集する", edit_good_path(@good), :class => "btn btn-default" %>

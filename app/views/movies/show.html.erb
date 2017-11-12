@@ -73,7 +73,7 @@
 <% end %>
 &nbsp;&nbsp;<%= @movie.user.name %>
 <br><br>
-<%= social_share_button_tag(@movie.title) %>
+<%= social_share_button_tag(@sns) %>
 <% if @movie.user == current_user %>
 <br><br>
 <%= link_to "編集する", edit_movie_path(@movie), :class => "btn btn-default" %>

@@ -73,7 +73,7 @@
 <% end %>
 &nbsp;&nbsp;<%= @dish.user.name %>
 <br><br>
-<%= social_share_button_tag(@dish.title) %>
+<%= social_share_button_tag(@sns) %>
 <% if @dish.user == current_user %>
 <br><br>
 <%= link_to "編集する", edit_dish_path(@dish), :class => "btn btn-default" %>

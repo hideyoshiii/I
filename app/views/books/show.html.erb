@@ -74,7 +74,7 @@
 <% end %>
 &nbsp;&nbsp;<%= @book.user.name %>
 <br><br>
-<%= social_share_button_tag(@book.title) %>
+<%= social_share_button_tag(@sns) %>
 <% if @book.user == current_user %>
 <br><br>
 <%= link_to "編集する", edit_book_path(@book), :class => "btn btn-default" %>

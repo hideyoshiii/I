@@ -7,6 +7,7 @@ class MoviesController < ApplicationController
 
   def show
     @movie = Movie.find(params[:id])
+    @sns = "[my I あなたのNo.1]/Movie " + @movie.title
   end
 
   def new

@@ -7,6 +7,7 @@ class GoodsController < ApplicationController
 
   def show
     @good = Good.find(params[:id])
+    @sns = "[my I あなたのNo.1]/my I " + @good.title
   end
 
   def new

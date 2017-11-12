@@ -7,6 +7,7 @@ class BooksController < ApplicationController
 
   def show
     @book = Book.find(params[:id])
+    @sns = "[my I あなたのNo.1]/Book " + @book.title
   end
 
   def new
