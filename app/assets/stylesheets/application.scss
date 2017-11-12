@@ -66,3 +66,12 @@ $size: 30px;
 @media screen and (min-width: 1000px) {
 .category { display: none !important; }
 }
+
+
+.page-pc { display: block !important; }
+.page-sp { display: none !important; }
+
+@media only screen and (max-width: 768px) {
+.page-pc { display: none !important; }
+.page-sp { display: block !important; }
+}
