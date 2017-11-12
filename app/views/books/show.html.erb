@@ -74,8 +74,6 @@
 <% end %>
 &nbsp;&nbsp;<%= @book.user.name %>
 <br><br>
-<div class="fb-share-button" data-href="https://infinite-cliffs-46985.herokuapp.com/" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Finfinite-cliffs-46985.herokuapp.com%2F&amp;src=sdkpreparse">シェア</a></div>
-<br><br>
 <%= social_share_button_tag(@sns) %>
 <% if @book.user == current_user %>
 <br><br>
